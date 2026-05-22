@@ -1,61 +1,81 @@
-# Newsletter AI Writer
+# Daniel Bilbao — Substack Ghostwriting con IA
 
-An open-source toolkit for writing long-form newsletter essays with AI. Clone it, configure your voice, and generate essays that sound like you — not like a robot.
+Sistema de ghostwriting asistido por IA para [danielbilbao.substack.com](https://danielbilbao.substack.com), el Substack de Daniel Bilbao.
 
-## Quickstart
+## Cómo funciona
 
-1. **Clone** the repo
-2. **Copy** `master-prompt-template.md` and fill in the `{{PLACEHOLDERS}}` with your voice, bio, and style (see `examples/` for reference)
-3. **Use** your filled-in prompt with Claude, GPT, or any LLM. Combine it with a prompt template from `prompts/` depending on your source material.
+### Paso 1: Configurar el master prompt
 
-## Structure
+El archivo `daniel-bilbao.md` contiene todas las reglas de voz, estilo, prohibiciones y estructura que la IA debe seguir. Se carga al inicio de cada sesión de Claude (o cualquier LLM).
+
+Incluye:
+
+- Voz en primera persona como Daniel Bilbao
+- Tono conversacional + honesto, con colombianismos y voseo como condimento
+- Prohibiciones absolutas (estructuras binarias, em dashes, frases LLM, descriptores vacíos, datos inventados)
+- Reglas de formato (números, monedas, listas)
+- Estructura de ensayo (apertura, desarrollo, cierre)
+- Jerarquía de fuentes (McKinsey, BCG, Anthropic, Goldman Sachs, Gallup, TechCrunch/Bloomberg/WSJ/FT)
+- Checklist de autoauditoría
+
+### Paso 2: Preparar el insumo
+
+Cada ensayo parte de uno de tres tipos de insumo:
+
+| Tipo | Descripción | Ejemplo |
+|---|---|---|
+| Transcripción | Audio de podcast/entrevista transcrito | Conversación de Daniel en un evento |
+| Artículo fuente | Artículo o reporte que dispara la reflexión | Reporte de McKinsey, nota de Bloomberg |
+| Tema original | Solo un tema — la IA investiga y escribe | "El impacto de IA en el emprendimiento latino" |
+
+### Paso 3: Generar el ensayo
+
+1. Cargar el master prompt en Claude
+2. Pedir deep research sobre el tema (la IA busca fuentes verificables)
+3. Revisar el research y aprobar/ajustar el enfoque
+4. Generar el ensayo completo con piés de página y enlaces
+5. Exportar como `.docx` con footnotes nativas
+
+### Paso 4: Revisar y publicar
+
+1. Revisar el `.docx` generado — corregir lo que haga falta
+2. Subir a Substack como borrador
+3. Publicar
+
+## Estructura del repo
 
 ```
-master-prompt-template.md        # The core template — fill this in
-examples/
-  growth-rockstar.md             # Dylan Rosemberg's growth newsletter (Argentine, tactical)
-prompts/
-  essay-from-podcast.md          # Turn a podcast transcript into an essay
-  essay-from-article.md          # Turn a source article into an original essay
-  essay-original.md              # Write an original essay from a topic
+DanielB/
+├── README.md                        # Este archivo
+├── daniel-bilbao.md                 # Master prompt — reglas de voz, estilo y estructura
+├── master-prompt-template.md        # Template base reutilizable para otros autores
+├── examples/
+│   └── growth-rockstar.md           # Ejemplo de configuración para referencia
+└── prompts/
+    ├── essay-from-podcast.md        # Convertir transcripción en ensayo
+    ├── essay-from-article.md        # Convertir artículo fuente en ensayo original
+    └── essay-original.md            # Escribir ensayo desde un tema
 ```
 
-## What's in the template
+## Archivos
 
-The master prompt template covers:
+**`daniel-bilbao.md`** — El cerebro del sistema. Todas las instrucciones que la IA necesita para escribir como Daniel. Se actualiza cada vez que se detecta un patrón LLM nuevo que prohibir.
 
-- **Identity & purpose** — who you are, what you write about
-- **10 customizable voice traits** — tone, slang, paragraph style, metaphor world, data style, honesty style, closing style, humor, POV, reader relationship
-- **Universal LLM prohibitions** — battle-tested rules that prevent AI-generated text from sounding like AI (binary structures, pseudo-intellectualism, filler phrases, academic hedging, and more)
-- **Essay structure** — opening hooks, development rules, closing philosophy
-- **Research & factuality** — source validation rules to prevent hallucination
-- **Source hierarchy** — tiered sources for your domain
-- **Self-audit process** — a checklist to run before publishing
-- **Final checklist** — the definitive quality gate
+**`prompts/`** — Los tres modos de generación según el insumo disponible.
 
-## The LLM prohibitions are the secret sauce
+**`examples/growth-rockstar.md`** — Configuración de referencia de otro newsletter (Dylan Rosemberg) para entender cómo llenar el template base.
 
-The universal prohibitions section works for any writer in any language. It catches the patterns that make AI text immediately recognizable:
+## Reglas clave del master prompt
 
-- Binary contrast structures ("That's not X. It's Y.")
-- Pseudo-intellectualism disguised as honesty ("cognitive recalibration", "performative humility")
-- Academic hedging ("My hypothesis is that...")
-- Artificially chopped dramatic sentences
-- The "What [doesn't] X is Y" formula
-- LLM filler phrases ("it's worth noting", "in this context")
+- Escritura en primera persona como Daniel Bilbao (nunca tercera persona)
+- Prohibido: estructuras binarias ("No es X, es Y"), em dashes, frases cliché de LLM, descriptores vacíos, datos inventados
+- Monedas: US$X para dólares, $X COP para pesos colombianos
+- Números: 0-9 en letras, 10+ en cifras, porcentajes siempre como número + %
+- Fuentes: Solo fuentes verificables. Nunca CEPAL ni OECD
+- La prueba del tinto: si no suena como algo que Daniel diría tomándose un café con un founder, se reescribe
 
-These rules were developed across dozens of essays and refined through real editing. They work.
+## Herramientas
 
-## Example
-
-A complete, working configuration is included:
-
-| Newsletter | Author | Language | Style |
-|---|---|---|---|
-| [Growth Rockstar](https://blog.growthrockstar.com/) | Dylan Rosemberg | Argentine Spanish (voseo) | Tactical, framework-driven, scannable |
-
-Use it as a reference for how to fill in the template with your own voice.
-
-## License
-
-MIT
+- **Claude (Anthropic)** — Generación de ensayos y research
+- **Node.js + docx** — Generación de `.docx` con footnotes nativas
+- **Claude in Chrome** — Upload directo a Substack como borrador
