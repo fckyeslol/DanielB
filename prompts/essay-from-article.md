@@ -1,38 +1,38 @@
-# Essay from Source Article
+# Ensayo desde Artículo Fuente
 
-Use this prompt to generate an original essay inspired by an existing article, report, or piece of writing.
+Usa este prompt para generar un ensayo original inspirado en un artículo, reporte o texto existente.
 
 ---
 
 ## Prompt
 
 ```
-You are going to write an essay for the newsletter {{NEWSLETTER_NAME}} inspired by the source material below.
+Vas a escribir un ensayo para el Substack "Alborotando el Avispero" de Daniel Bilbao inspirado en el material fuente a continuación.
 
-MASTER PROMPT (voice, style, rules):
-[Paste your filled-in master prompt here]
+MASTER PROMPT (voz, estilo, reglas):
+[Pega aquí el contenido completo de daniel-bilbao.md]
 
-SOURCE MATERIAL:
-[Paste article, report excerpt, or link here]
+MATERIAL FUENTE:
+[Pega aquí el artículo, fragmento del reporte o enlace]
 
-INSTRUCTIONS:
-1. Read the source material completely. Identify the core argument and the 2-3 most provocative insights.
-2. Write an ORIGINAL essay that uses the source as a springboard — not a rewrite or summary. {{AUTHOR_NAME}}'s perspective, experience, and opinions should drive the essay.
-3. The source material should be one of several references, not the only one. Research and add 8-15 additional footnoted sources.
-4. Structure the essay following the master prompt's essay structure rules.
-5. Where you agree with the source, add your own examples. Where you disagree, say so directly.
-6. Apply all voice rules from the master prompt.
-7. Run the self-audit checklist before delivering.
+INSTRUCCIONES:
+1. Lee el material fuente completo. Identifica el argumento central y los 2-3 insights más provocadores.
+2. Escribe un ensayo ORIGINAL que use la fuente como punto de partida — no una reescritura ni un resumen. La perspectiva, experiencia y opiniones de Daniel deben conducir el ensayo.
+3. El material fuente debe ser una referencia entre varias, no la única. Investiga y agrega 8-15 fuentes adicionales en notas al pie.
+4. Estructura el ensayo siguiendo las reglas del master prompt.
+5. Donde estés de acuerdo con la fuente, agrega ejemplos propios. Donde no estés de acuerdo, dilo directamente.
+6. Aplica todas las reglas de voz del master prompt.
+7. Corre el checklist de autoauditoría antes de entregar.
 
-OUTPUT FORMAT:
-- Title (compelling, not generic)
-- Subtitle (one sentence that hooks)
-- Full essay body with section headers
-- Numbered footnotes at the end with full source descriptions and URLs
+FORMATO DE SALIDA:
+- Título (provocador, no genérico)
+- Subtítulo (una oración que engancha)
+- Cuerpo completo del ensayo con subtítulos de sección
+- Notas al pie numeradas al final con descripción completa de la fuente y URL
 ```
 
 ## Tips
 
-- **Add your angle.** The source is a conversation partner, not a script. React to it, push back, extend it.
-- **Mix sources.** Combine the original article with data, other thinkers, and personal experience.
-- **Don't over-attribute.** Use the source's ideas naturally. Credit the author where due, but the essay is yours.
+- **Agrega tu ángulo.** La fuente es un interlocutor, no un guión. Reacciona, discrepa, extiéndelo.
+- **Mezcla fuentes.** Combina el artículo original con datos, otros pensadores y experiencia personal de Truora.
+- **No sobre-atribuyas.** Usa las ideas de la fuente de forma natural. Dale crédito al autor donde corresponda, pero el ensayo es de Daniel.

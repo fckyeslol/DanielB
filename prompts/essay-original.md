@@ -1,42 +1,42 @@
-# Original Essay from Topic
+# Ensayo Original desde Tema
 
-Use this prompt to generate an original essay from scratch on a given topic.
+Usa este prompt para generar un ensayo original desde cero sobre un tema dado.
 
 ---
 
 ## Prompt
 
 ```
-You are going to write an original essay for the newsletter {{NEWSLETTER_NAME}} on the following topic.
+Vas a escribir un ensayo original para el Substack "Alborotando el Avispero" de Daniel Bilbao sobre el siguiente tema.
 
-MASTER PROMPT (voice, style, rules):
-[Paste your filled-in master prompt here]
+MASTER PROMPT (voz, estilo, reglas):
+[Pega aquí el contenido completo de daniel-bilbao.md]
 
-TOPIC:
-[Describe the topic, angle, or question you want to explore]
+TEMA:
+[Describe el tema, ángulo o pregunta que querés explorar]
 
-CONTEXT (optional):
-[Any additional context — why this topic now, recent events, personal experiences to include]
+CONTEXTO (opcional):
+[Cualquier contexto adicional — por qué este tema ahora, eventos recientes, experiencias personales de Daniel a incluir]
 
-INSTRUCTIONS:
-1. Research the topic thoroughly. Find 10-20 relevant, recent, verifiable sources.
-2. Develop a clear thesis — not a survey of the topic, but an argument or perspective.
-3. Structure the essay following the master prompt's essay structure rules (opening, 3-5 sections, closing).
-4. Ground every section with concrete examples: real people, companies, numbers, moments. No abstract theorizing.
-5. Include 10-15 footnoted sources minimum. Prioritize Tier 1 sources from the master prompt.
-6. Apply all voice rules from the master prompt.
-7. Run the self-audit checklist before delivering.
+INSTRUCCIONES:
+1. Investiga el tema a fondo. Encuentra 10-20 fuentes relevantes, recientes y verificables.
+2. Desarrolla una tesis clara — no un recorrido por el tema, sino un argumento o postura.
+3. Estructura el ensayo siguiendo las reglas del master prompt (apertura, 3-5 secciones, cierre).
+4. Ancla cada sección con ejemplos concretos: personas reales, empresas reales, números, momentos. Sin teorización abstracta.
+5. Incluye mínimo 10-15 fuentes en notas al pie. Prioriza las fuentes Tier 1 del master prompt.
+6. Aplica todas las reglas de voz del master prompt.
+7. Corre el checklist de autoauditoría antes de entregar.
 
-OUTPUT FORMAT:
-- Title (compelling, not generic)
-- Subtitle (one sentence that hooks)
-- Full essay body with section headers
-- Numbered footnotes at the end with full source descriptions and URLs
+FORMATO DE SALIDA:
+- Título (provocador, no genérico)
+- Subtítulo (una oración que engancha)
+- Cuerpo completo del ensayo con subtítulos de sección
+- Notas al pie numeradas al final con descripción completa de la fuente y URL
 ```
 
 ## Tips
 
-- **Start with research, not writing.** Build a source inventory first. The best essays come from discovering surprising data.
-- **One thesis, not a topic.** "AI in education" is a topic. "Why teaching kids to code is already obsolete" is a thesis.
-- **The opening is everything.** Spend extra time on the first paragraph. If it doesn't hook, nothing else matters.
-- **Kill generic headers.** "The Problem" or "The Solution" are never acceptable. Headers should be mini-arguments.
+- **Empieza por el research, no por la escritura.** Primero arma el inventario de fuentes. Los mejores ensayos nacen de descubrir datos sorprendentes.
+- **Una tesis, no un tema.** "IA en educación" es un tema. "Por qué enseñarles a los pelaos a programar ya está obsoleto" es una tesis.
+- **La apertura es todo.** Dedicale tiempo extra al primer párrafo. Si no engancha, el resto no importa.
+- **Mata los subtítulos genéricos.** "El problema" o "La solución" nunca son aceptables. Los subtítulos deben ser mini-argumentos.

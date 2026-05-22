@@ -1,39 +1,39 @@
-# Essay from Podcast Transcript
+# Ensayo desde Transcripción de Podcast
 
-Use this prompt to generate a long-form essay based on a podcast episode transcript.
+Usa este prompt para generar un ensayo largo basado en la transcripción de un podcast o entrevista.
 
 ---
 
 ## Prompt
 
 ```
-You are going to write an essay for the newsletter {{NEWSLETTER_NAME}} based on the podcast transcript below.
+Vas a escribir un ensayo para el Substack "Alborotando el Avispero" de Daniel Bilbao basado en la transcripción del podcast a continuación.
 
-MASTER PROMPT (voice, style, rules):
-[Paste your filled-in master prompt here]
+MASTER PROMPT (voz, estilo, reglas):
+[Pega aquí el contenido completo de daniel-bilbao.md]
 
-PODCAST TRANSCRIPT:
-[Paste transcript here]
+TRANSCRIPCIÓN DEL PODCAST:
+[Pega aquí la transcripción]
 
-INSTRUCTIONS:
-1. Read the entire transcript carefully. Identify the 3-5 most compelling ideas, stories, or insights.
-2. Choose ONE central thesis that connects them. The essay is NOT a summary of the episode — it's an original essay inspired by it.
-3. Structure the essay following the master prompt's essay structure rules (opening, 3-5 sections, closing).
-4. Weave in the speaker's best quotes naturally. Do not over-quote — paraphrase when the author's voice would say it differently.
-5. Research and add 8-15 footnoted sources that support, contextualize, or expand on the ideas. Cite real, verifiable sources only.
-6. Apply all voice rules from the master prompt. The essay should sound like {{AUTHOR_NAME}} wrote it, not like a transcript summary.
-7. Run the self-audit checklist before delivering.
+INSTRUCCIONES:
+1. Lee la transcripción completa. Identifica las 3-5 ideas, historias o insights más potentes.
+2. Elige UNA tesis central que las conecte. El ensayo NO es un resumen del episodio — es un ensayo original inspirado en él.
+3. Estructura el ensayo siguiendo las reglas del master prompt (apertura, 3-5 secciones, cierre).
+4. Integra las mejores citas del invitado de forma natural. No sobre-cites — parafrasea cuando la voz de Daniel lo diría diferente.
+5. Investiga y agrega 8-15 fuentes en notas al pie que respalden, contextualicen o amplíen las ideas. Solo fuentes reales y verificables.
+6. Aplica todas las reglas de voz del master prompt. El ensayo debe sonar como si Daniel lo hubiera escrito, no como un resumen de transcripción.
+7. Corre el checklist de autoauditoría antes de entregar.
 
-OUTPUT FORMAT:
-- Title (compelling, not generic)
-- Subtitle (one sentence that hooks)
-- Full essay body with section headers
-- Numbered footnotes at the end with full source descriptions and URLs
+FORMATO DE SALIDA:
+- Título (provocador, no genérico)
+- Subtítulo (una oración que engancha)
+- Cuerpo completo del ensayo con subtítulos de sección
+- Notas al pie numeradas al final con descripción completa de la fuente y URL
 ```
 
 ## Tips
 
-- **Don't summarize the episode.** Extract the best ideas and build an original argument around them.
-- **The speaker's voice ≠ the author's voice.** Translate insights into the newsletter's established voice.
-- **Footnotes add credibility.** Every major claim should have a source. Mix the podcast itself as a source with external research.
-- **If the transcript is long (60+ min),** focus on one theme rather than trying to cover everything.
+- **No resumas el episodio.** Extrae las mejores ideas y construye un argumento original alrededor de ellas.
+- **La voz del invitado ≠ la voz de Daniel.** Traduce los insights a la voz establecida del newsletter.
+- **Las notas al pie dan credibilidad.** Cada afirmación importante debe tener fuente. Mezcla el podcast mismo como fuente con investigación externa.
+- **Si la transcripción es larga (+60 min),** enfócate en un solo tema en lugar de intentar cubrirlo todo.
